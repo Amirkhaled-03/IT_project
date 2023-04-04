@@ -103,3 +103,34 @@ p{
     color: blue;
     
 }
+
+button{
+
+    font-size: 50px;
+    margin: 11px 0 66px 50%;
+
+}
+
+.sub{
+    font-size: xxx-large;
+    font-stretch: extra-condensed;
+    font-style: italic;
+    color: gold;
+    padding: 39px;
+    text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    color: rgb(23, 205, 41);
+   text-decoration: none;
+    
+}
+
+a:hover{
+    color:blueviolet;
+    background-color: black;
+    color: white;
+    
+}
