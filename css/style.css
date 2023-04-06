@@ -3,20 +3,24 @@
 /*start global rules */
 
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 
 html{
     scroll-behavior: smooth;
+
 }
 
 body{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    
 }
+
 
 
 .container {               /*eshan el haga tege fe nos el safha w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa*/
@@ -52,85 +56,136 @@ body{
 /* tkhtefi fel mobile */
 @media (max-width:767px) {
     
- 
-
 }
+
 /* tzher fel mobile */
-@media (max-width:767px) {
+@media (min-width:767px) {
     
- 
-
 }
-
 
 /* ==================================================================================================================================================================== */
 
 
 
 
-
-
-
-
-
-
-
-
-div{
-    color:red
-}
-
-p{
-    color:red;
+.header .container{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-image: url(../sewar/wp9095239.jpg);
+    width: 100%;
+    background-size: cover;
+    justify-content: end;
+    position: relative;
+/* 3amlt flex 3ashan ywza3 el elelmt men el akhir 3shan lw feh logo wla haga ythat fel awil 
+   width hena ma3na khod el safha kolha bel 3ard
+*/
 
 }
 
-.new{
-    color: red;
-    border: 2px solid blue;
-
-    font-size: 200px;
+ul{
+    list-style: none;        /*3ashan ashel el dot aly ganbha*/
+}
+.header .container ul{
+    display: flex;
+    flex-direction: row-reverse;    /*mkasel a3keshom men el html bsraha*/
 }
 
-.text{
-    color:blue;
-    border-bottom: 1px solid red;
-    width: 5%;
-    
-}
-
-.amir{
-    color: blue;
-    
-}
-
-button{
-
-    font-size: 50px;
-    margin: 11px 0 66px 50%;
-
-}
-
-.sub{
-    font-size: xxx-large;
-    font-stretch: extra-condensed;
-    font-style: italic;
-    color: gold;
-    padding: 39px;
-    text-align: center;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-a {
-    color: rgb(23, 205, 41);
-   text-decoration: none;
-    
-}
-
-a:hover{
-    color:blueviolet;
-    background-color: black;
+.header .container ul a{
+    padding: 14px 50px;
+    display: block;            /*lazem display block 3shan y respect el paddiing w el heigth w el kalam dah*/
     color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header .container ul a:hover{
+    color:aqua;
+    /* border-bottom: 1px solid aqua; */
+    padding-top: 1px;
+    
     
 }
+
+.icon{
+    color: white;
+    position: absolute;
+    top: 25%;
+    font-size: 25px;
+}
+
+/* tkhtefi fel mobile .. action yhsal fel mobile*/
+/*  tekhtifi fel mobile w tzher fel ba2i*/
+@media (max-width:767px) {
+    .header .container ul{
+        display: none;
+    }
+   
+
+}
+
+i:hover +ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:100%;
+    background-color: rgb(0 0 0 /50%);
+}
+
+/*tzher fel mobile*/
+
+
+@media (min-width:768px) {
+    i{
+        display: none;
+    }
+  
+
+    
+}
+
+/* start landing video */
+video{
+    width: 100%;
+    position: relative;
+    top: 3px;     
+    /* 3ashan a3mil space fadi fo2 keda */
+}
+.landing-video{
+    position: relative;
+}
+.landing-video::before{
+    content: "";
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 3ashan y cover el mohtawa kolo */
+    background-color: rgb(0 0 0 /50%);
+    z-index: 2;
+}
+.landing-video .text{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px;
+    background-color: rgba(0 0 0 /50%);
+    color: white;
+    text-align: center;
+
+}
+
+.landing-video .text h2{
+    padding-bottom: 13px;
+
+}
+
+.landing-video .text p{
+    font-size:29px;
+}
+
+
