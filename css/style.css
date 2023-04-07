@@ -66,35 +66,99 @@ body{
 /* ==================================================================================================================================================================== */
 
 
-.header{
+/* .header{
     position: relative;
-}
+} */
 
 .header .container{
     display: flex;
     width: 100%;
-    height: 50px;
-    background-image: url(../sewar/wp9095239.jpg);
+    height: 61px;
+    /* background-image: url(../sewar/wp9095239.jpg); */
+    background-color: #ebeced;
     width: 100%;
     background-size: cover;
     justify-content: end;
     position: relative;
-/* 3amlt flex 3ashan ywza3 el elelmt men el akhir 3shan lw feh logo wla haga ythat fel awil 
-   width hena ma3na khod el safha kolha bel 3ard
-*/
 
+
+
+}
+
+.header img{
+    height: 62px;
+    position: absolute;
+    left: 0px;
+    top: 82%;
+    transform: translateY(-50px);
+}
+
+.header p{
+    position: absolute;
+    top: 50%;
+    font-size: 22px;
+    font-style: italic;
+    position: absolute;
+    right: 9px;
+    top: 92%;
+    transform: translateY(-50px);
+} 
+
+.header .container .cont{
+    display: flex;
+}
+
+.header p::first-letter {
+    color: #f9b940;
+font-size: xx-large;
 }
 
 ul{
     list-style: none;        /*3ashan ashel el dot aly ganbha*/
     position: relative;
+    margin: 25px;
+    right: -60px;
 }
 
-.header .container ul{
+nav .container ul{
     display: flex;
     flex-direction: row-reverse;  
     /*mkasel a3keshom men el html bsraha*/
 }
+
+nav .container ul li{
+    flex-grow: 1;
+}
+
+nav .container ul i{
+    padding-right: 5px;
+}
+
+nav .container a{
+    text-decoration: none;
+    color:black;
+
+}
+
+nav .container ul li a:hover{
+    color:blue;
+    border-bottom: 1px solid red;
+    padding-top: 5px;
+}
+
+@media (max-width:767px){
+    nav .container  ul i{
+        display: none;
+    }
+    ul{
+        right: -13px;
+    }
+    
+ 
+ 
+ }
+
+
 
 .header .container ul nav a{
     padding: 14px 50px;
@@ -104,39 +168,9 @@ ul{
     transition: 0.3s;
 }
 
-.header .container ul a:hover{
-    color:aqua;
-    /* border-bottom: 1px solid aqua; */
-    padding-top: 1px;}
 
 
- .header .container nav .icon:hover + ul{
-    display: block;
- }
 
-.header img{
-    height: 60px;
-    height: 60px;
-    position: absolute;
-    left: -11px;
-    top: 50%;
-    transform: translateY(-50%)   /*3ashan awstanha belzabt fel y-axis*/
-}
-
-.header p{
-    position: absolute;
-    left: 44px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 22px;
-    font-style: italic;
-}
-
-.header p::first-letter {
-        color: #f9b940;
-    font-size: xx-large;
-}
 
 .header .container ul{
     display: flex;
@@ -151,13 +185,7 @@ ul{
     transition: 0.3s;
 }
 
-.header .container ul a:hover{
-    color:aqua;
-    /* border-bottom: 1px solid aqua; */
-    padding-top: 1px;
-    
-    
-}
+
 
 
 
@@ -165,33 +193,9 @@ ul{
 /*  tekhtifi fel mobile w tzher fel ba2i*/
 @media (max-width:767px)
  {
-   .header .container ul li a{
-        /* display: none; */
-        padding: 0;
-        color: black;
-        
-    }
+ 
+ }
 
-  .header .container ul li {
-    padding-left: 20px;
-
-  }
-
-
-   
-    .header .container ul{
-        padding: 52px 34px;
-        display: flex;
-        flex-direction: row;
-        z-index: 5;
-        position: absolute;
-        right: 1px;
-        top: 19px;
-    }
-    }
-
-
-    
 
 
 
@@ -235,6 +239,7 @@ video{
     background-color: rgba(0 0 0 /29%);
     color: white;
     text-align: center;
+    z-index: 2;
 
 }
 
