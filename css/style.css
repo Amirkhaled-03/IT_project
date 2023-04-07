@@ -53,7 +53,7 @@ body{
 }
 /*end global rules */
 
-/* tkhtefi fel mobile */
+/* tkhtefi fel mobile action yhsal fel mobile*/
 @media (max-width:767px) {
     
 }
@@ -66,7 +66,9 @@ body{
 /* ==================================================================================================================================================================== */
 
 
-
+.header{
+    position: relative;
+}
 
 .header .container{
     display: flex;
@@ -85,7 +87,57 @@ body{
 
 ul{
     list-style: none;        /*3ashan ashel el dot aly ganbha*/
+    position: relative;
 }
+
+.header .container ul{
+    display: flex;
+    flex-direction: row-reverse;  
+    /*mkasel a3keshom men el html bsraha*/
+}
+
+.header .container ul nav a{
+    padding: 14px 50px;
+    display: block;            /*lazem display block 3shan y respect el paddiing w el heigth w el kalam dah*/
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header .container ul a:hover{
+    color:aqua;
+    /* border-bottom: 1px solid aqua; */
+    padding-top: 1px;}
+
+
+ .header .container nav .icon:hover + ul{
+    display: block;
+ }
+
+.header img{
+    height: 60px;
+    height: 60px;
+    position: absolute;
+    left: -11px;
+    top: 50%;
+    transform: translateY(-50%)   /*3ashan awstanha belzabt fel y-axis*/
+}
+
+.header p{
+    position: absolute;
+    left: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.header p::first-letter {
+        color: #f9b940;
+    font-size: xx-large;
+}
+
 .header .container ul{
     display: flex;
     flex-direction: row-reverse;    /*mkasel a3keshom men el html bsraha*/
@@ -107,44 +159,51 @@ ul{
     
 }
 
-.icon{
-    color: white;
-    position: absolute;
-    top: 25%;
-    font-size: 25px;
-}
+
 
 /* tkhtefi fel mobile .. action yhsal fel mobile*/
 /*  tekhtifi fel mobile w tzher fel ba2i*/
-@media (max-width:767px) {
-    .header .container ul{
-        display: none;
+@media (max-width:767px)
+ {
+   .header .container ul li a{
+        /* display: none; */
+        padding: 0;
+        color: black;
+        
     }
+
+  .header .container ul li {
+    padding-left: 20px;
+
+  }
+
+
    
+    .header .container ul{
+        padding: 52px 34px;
+        display: flex;
+        flex-direction: row;
+        z-index: 5;
+        position: absolute;
+        right: 1px;
+        top: 19px;
+    }
+    }
 
-}
 
-i:hover +ul{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width:100%;
-    background-color: rgb(0 0 0 /50%);
-}
+    
+
+
+
+
+
 
 /*tzher fel mobile*/
 
+/* action yhsal ba3d el mobile */
 
-@media (min-width:768px) {
-    i{
-        display: none;
-    }
-  
 
-    
-}
+
 
 /* start landing video */
 video{
@@ -173,7 +232,7 @@ video{
     top: 50%;
     transform: translateY(-50%);
     padding: 40px;
-    background-color: rgba(0 0 0 /50%);
+    background-color: rgba(0 0 0 /29%);
     color: white;
     text-align: center;
 
@@ -187,5 +246,127 @@ video{
 .landing-video .text p{
     font-size:29px;
 }
+/* start about */
+
+#About{
+    width: 100%;
+    min-height: 386px;
+    background-color:#ebeced;
+    padding-top: 60px;
+    padding-bottom: 15px;
+    margin-top: 40px;
+}
+
+.about-section .container{
+    position: relative;
+}
+
+.about-section h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 80px;
+    color:#800000	;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.about-section p{
+    line-height: 2.5;
+    color: #777;
+}
+
+.about-section img{
+    
+    height: 123px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+/* action yhsal fel mobile */
+@media (max-width: 767px)
+{
+  .about-section h2 {
+    font-size: 45px;
+  }
+ .about-section img{
+    display: none;
+
+ }
+}
+/* end about */
+/* start contacts */
+#Contacts{
+    width: 100%;
+    min-height: 330px;  /*lazem min 3shan ytmaded m3aia w maybozsh fel mobile*/
+    padding-top: 60px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+}
+
+.contacts-section h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 80px;
+    color:#800000	;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px)
+{
+  .contacts-section h2 {
+    font-size: 45px;
+  }
+}
+
+.contacts-section .info{
+    text-align: center;
+}
+
+.contacts-section .info p{
+    font-size: 23px;
+    letter-spacing: -1px;
+}
+
+.contacts-section .info .mail{
+    color: 	#00008b;
+    font-size: 23px;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0px 15px 0;
+}
+
+.contacts-section span{
+font-size: 17px;
+font-weight: 600;
+    
+}
+
+.contacts-section .social a{
+    color: #EBEC45;
+    padding-left: 23px;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* end contacts */
+
+/* start footer */
+.footer{
+    background-color: #2c4755;
+    color: white;
+    text-align: center;
+    padding: 27px 3px 10px;
+    font-size: 20px;
+
+}
+.footer span{
+    color:#f9b940;
+}
+
+/* end footer */
+
+
 
 
