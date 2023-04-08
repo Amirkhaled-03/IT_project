@@ -1,35 +1,42 @@
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!mhadesh yl3ab fehom w hab3tloko videos bt2ol ehh dah belzabt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11*/
 
 /*start global rules */
 
+/*
+bos sizing el fel asan byb2a content bos w dah ma3nah en khod el widrh bta3 el element w zawid 3leh padding w margin wkeda
+border bos ma3nah width w heigth bta3 el element h inculde el width bta3 ay haga ana ha3milha border maslan
+w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
+  
+*/
 *{
-    --webkit-box-sizing: border-box;
-    --moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     
 }
 
+
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth;     /*3shan lma agi a3mil scroll el donia tb2a basyta mttkhtefsh */
 
 }
 
-body{
-    font-family: 'Cairo', sans-serif;
+body{  
+    font-family: 'Cairo', sans-serif;   /*font size that used in site*/
     
 }
 
 
-
-.container {               /*eshan el haga tege fe nos el safha w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa*/
-    /* width: 600px; */
+/*
+  eshan el hagat kolha tegi ba3d width mo3in matlz2sh kolha awil al safha  w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa
+*/
+.container {             
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;    /*kol dah3ashan el noskha bta3et el phone matb2ash el kalam awil el page*/
     margin-right: auto;  
 }
+
+/* responsive w keda  */
 
 /* mobile from zero to 768 */
 @media(min-width: 768px) {
@@ -71,52 +78,39 @@ body{
 } */
 
 .header .container{
-    display: flex;
-    width: 100%;
+    /* display: flex; */
+    width: 100%;                      /*3shan el background color yakhod el width kolo .. over ride el value bta3et el container*/
     height: 61px;
-    /* background-image: url(../sewar/wp9095239.jpg); */
     background-color: #ebeced;
-    width: 100%;
-    background-size: cover;
-    justify-content: end;
-    position: relative;
-
-
-
+    /* justify-content: end; */
+    position: relative;              /*lazem position relative hena 3shan el mohtwa aly howah bitwaza3 3ala hasab el ab3ad bta3to*/
 }
 
 .header img{
     height: 62px;
-    position: absolute;
-    left: 0px;
-    top: 82%;
-    transform: translateY(-50px);
+    position: absolute;               /*absolute bel nesba ll haga alu howa gowaha aly hia al container*/
+    left: 0px;                       /*3shan mayb2ash fel mesaha was3a fel awil keda */
 }
 
 .header p{
-    position: absolute;
-    top: 50%;
+    position: absolute;              /*belnesba ll container aly howa feh*/
     font-size: 22px;
     font-style: italic;
-    position: absolute;
-    right: 9px;
+    right: 9px;                    /*3shan yzbot fel makan al monaseb ana ma3rfsh aslan hib2a fen lma al8ihom */
     top: 92%;
-    transform: translateY(-50px);
+    transform: translateY(-50px);  /*3ashan yzbot bardo*/
 } 
 
-.header .container .cont{
-    display: flex;
-}
 
-.header p::first-letter {
-    color: #f9b940;
-font-size: xx-large;
+.header p::first-letter {       /*awil harf fel text de*/
+    color: #f9b940;     
+    font-size: xx-large;
 }
 
 ul{
     list-style: none;        /*3ashan ashel el dot aly ganbha*/
-    position: relative;
-    margin: 25px;
+    position: relative;     /*3shan azabt el rigth 3la hasaf na ana shaif enha keda ahla*/
+    margin: 25px 0 25px 0;          /*3shan ab3do men fo2 w ta7t w keda*/
     right: -60px;
 }
 
@@ -127,125 +121,71 @@ nav .container ul{
 }
 
 nav .container ul li{
-    flex-grow: 1;
+    flex-grow: 1;  /*ytmadedo kolhom lhad ma ynlo al container aly homa gwah default 0*/
 }
 
 nav .container ul i{
-    padding-right: 5px;
+    padding-right: 5px;       /*3ashan ab3ed el icon 3an el text aw el link ya3ni*/
 }
 
 nav .container a{
-    text-decoration: none;
+    text-decoration: none;   /*3ashan ashel el line aly ta7t el link*/
     color:black;
 
 }
 
-nav .container ul li a:hover{
+nav .container ul li a:hover{      /*lama agi a2af 3la el link a3mil kol al kalam aly ta7t*/
     color:blue;
-    border-bottom: 1px solid red;
-    padding-top: 5px;
+    border-bottom: 1px solid red;   /*line keda men ta7t*/
+    padding-top: 5px;                 /*ytala3 el kilma lfo2 keda 7aba*/
 }
 
+/* hena ba2olo fel noskha bta3et al mobile a3mil al kalam dah */
 @media (max-width:767px){
-    nav .container  ul i{
-        display: none;
+    nav .container  ul i{         /*bel nesba ll icon shela 3shan shaklha mesh a7san haga fel mobile*/
+        display: none;    
     }
     ul{
-        right: -13px;
+        right: -13px;    /*w list hazahzah7a shwia keda 3shan shaklha yb2a a7san*/
     }
     
  
  
- }
-
-
-
-.header .container ul nav a{
-    padding: 14px 50px;
-    display: block;            /*lazem display block 3shan y respect el paddiing w el heigth w el kalam dah*/
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
 }
-
-
-
-
-
-.header .container ul{
-    display: flex;
-    flex-direction: row-reverse;    /*mkasel a3keshom men el html bsraha*/
-}
-
-.header .container ul a{
-    padding: 14px 50px;
-    display: block;            /*lazem display block 3shan y respect el paddiing w el heigth w el kalam dah*/
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-
-
-
-
-/* tkhtefi fel mobile .. action yhsal fel mobile*/
-/*  tekhtifi fel mobile w tzher fel ba2i*/
-@media (max-width:767px)
- {
- 
- }
-
-
-
-
-
-
-
-/*tzher fel mobile*/
-
-/* action yhsal ba3d el mobile */
-
 
 
 
 /* start landing video */
 video{
-    width: 100%;
-    position: relative;
-    top: 3px;     
-    /* 3ashan a3mil space fadi fo2 keda */
+    width: 100%;     /*3shan yb2a 3la ad el shahsha belzabt keda*/
 }
+
 .landing-video{
-    position: relative;
+    position: relative;     /*lazem yb2a relative 3shan el before  lazem tb2a absolute liha*/
 }
-.landing-video::before{
-    content: "";
-    position: absolute; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* 3ashan y cover el mohtawa kolo */
-    background-color: rgb(0 0 0 /50%);
-    z-index: 2;
+
+.landing-video::before{    /*el div ely asmo landing dah a3mil abliha tab2a soda keda*/
+    content: "";          /*lazem a3mil el line dah 3shan yshta8al w momken ahon gowa el "" ay haga bas ana 3aizha fadiaa*/
+    position: absolute;  /*lazem bardo a3mil el line dah w lazem absolute 3shan ba2olo el width w keda yb2a men awil el landing video*/
+    width: 100%;        /*khod width el landing video kolo*/
+    height: 99%;       /*kod el heigth kolo bas ela 7eta leh ha2oloko fel video ba2a*/
+    background-color: rgb(0 0 0 /50%); /*el color aly hi8ati 3la el video w 50% de el shafafia bta3et el color*/
 }
+
 .landing-video .text{
-    width: 100%;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 40px;
-    background-color: rgba(0 0 0 /29%);
+    width: 100%;           /*kod el width kolo bta3 el div aly esmo landing video*/
+    top: 50%;              /* 3shan tzabat w keda fel nos*/
+    transform: translateY(-50%); /*nafs el hewar 3shan yzabat*/
+    padding: 25px;               /*3ashan el kalam baylza2sh fel 7awaf w keda */
+    background-color: rgba(0 0 0 /29%); /*el lone aly hikon feh el text*/
     color: white;
-    text-align: center;
-    z-index: 2;
+    text-align: center;   /*3ashan tegi fel nos*/
 
 }
 
 .landing-video .text h2{
-    padding-bottom: 13px;
-
+    padding-bottom: 13px;   /*3ashan tb3id 3an el paragraph aly ta7tha*/
 }
 
 .landing-video .text p{
@@ -253,38 +193,35 @@ video{
 }
 /* start about */
 
-#About{
-    width: 100%;
-    min-height: 386px;
-    background-color:#ebeced;
-    padding-top: 60px;
-    padding-bottom: 15px;
-    margin-top: 40px;
+#About{                  /*# ma3naha a3mil style pas pel id 3shan aya talba keda */
+    min-height: 386px;  /*lazem min 3shan maybozsh fel mobile w fel 3adi yb2a shaklo .. hanshof fe discord*/
+    background-color:#ebeced; 
+    padding-top: 60px;   /*3ashan yb3ed 3an el haga aly fo2*/ 
+    margin-top: 40px;     /*3ashan yb3id 3an el haga aly ta7t*/
 }
 
 .about-section .container{
-    position: relative;
+    position: relative;    /*3ashan lma agi azabat el sora */
 }
 
 .about-section h2{
     text-align: center;
     padding-bottom: 20px;
     font-size: 80px;
-    color:#800000	;
+    color:#800000;
     font-weight: normal;
     text-transform: uppercase;
 }
 
 .about-section p{
-    line-height: 2.5;
+    line-height: 2.5;   /*masafa ben kol line w el tani*/
     color: #777;
 }
 
 .about-section img{
-    
     height: 123px;
-    position: absolute;
-    top: 0;
+    position: absolute;  /*bel nesa ll container w keda*/
+    top: 0;             /*bazabt el makan bta3ha*/
     right: 0;
 
 }
@@ -293,21 +230,18 @@ video{
 @media (max-width: 767px)
 {
   .about-section h2 {
-    font-size: 45px;
+    font-size: 45px;         /*ba2alil wl font size 3shan saklo yb2a helw*/
   }
  .about-section img{
-    display: none;
+    display: none;    /*bashil el img aslan fel mobile*/
+}
 
- }
 }
 /* end about */
 /* start contacts */
 #Contacts{
-    width: 100%;
     min-height: 330px;  /*lazem min 3shan ytmaded m3aia w maybozsh fel mobile*/
-    padding-top: 60px;
-    padding-bottom: 10px;
-    margin-top: 5px;
+    padding-top: 60px;  /*bab3do 3an a*/
 }
 
 .contacts-section h2{
@@ -319,20 +253,20 @@ video{
     text-transform: uppercase;
 }
 
-@media (max-width: 767px)
-{
+/*action yhsal fel mobile*/
+@media (max-width: 767px){
   .contacts-section h2 {
-    font-size: 45px;
+    font-size: 45px;   /*nafs el hewar ba2alel el font */
   }
 }
 
 .contacts-section .info{
-    text-align: center;
+    text-align: center;  /*el kalam ygi fel center*/
 }
 
 .contacts-section .info p{
     font-size: 23px;
-    letter-spacing: -1px;
+    letter-spacing: -1px;    /*ba2lel el masafa maben el horof shaklha a7san*/
 }
 
 .contacts-section .info .mail{
@@ -340,7 +274,7 @@ video{
     font-size: 23px;
     text-decoration: none;
     display: block;
-    margin: 15px 0px 15px 0;
+    margin: 15px 0px 15px 0;    /*bab3dha 3an aly 7awaliha*/
 }
 
 .contacts-section span{
@@ -362,7 +296,7 @@ font-weight: 600;
     background-color: #2c4755;
     color: white;
     text-align: center;
-    padding: 27px 3px 10px;
+    padding: 27px 3px 10px; 
     font-size: 20px;
 
 }
