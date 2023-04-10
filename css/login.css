@@ -52,18 +52,19 @@ form div{
 }
 form input{
     background-color: black;
+    color: white;
     border: none;
     outline: none;
     padding: 7px;
     margin-bottom: 14px;
     width: 100%;
+    letter-spacing: 1.3px;
     /* display: block; */
     
 }
 
 input:focus{
     font-size: 17px;
-    color: white;
 }
 
 .box form input::placeholder{
