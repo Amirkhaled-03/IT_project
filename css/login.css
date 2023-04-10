@@ -21,7 +21,7 @@ body{
 }
 
 .box{
-    background-color:white;
+    background-color:black;
     border-radius: 10px;
     padding: 45px;
     width: 376px;
@@ -31,6 +31,7 @@ body{
 }
 
 h1{
+    color:white;
     text-align: center;
     font-size: 34px;
     margin-bottom: 45px;
@@ -40,6 +41,7 @@ h1{
 label{
     display: block;
     margin-bottom: 3px;
+    color:white;
 }
 
 form div{
@@ -49,6 +51,7 @@ form div{
     margin-bottom: 15px;
 }
 form input{
+    background-color: black;
     border: none;
     outline: none;
     padding: 7px;
@@ -60,10 +63,11 @@ form input{
 
 input:focus{
     font-size: 17px;
+    color: white;
 }
 
 .box form input::placeholder{
-    color:#b0b0b0;
+    color:white;
     opacity: 1;
     font-size: 15px;
     padding: 15px;
@@ -71,6 +75,7 @@ input:focus{
 }
 
 form div i{
+    color: white;
     font-size: 15px;
     padding: 0 6px 6px 0;
 }
@@ -105,8 +110,9 @@ form div:hover {
 }
 
 .submit:hover{
-    background-color: black;
+    background-color: aqua;
     padding-left: 15px;
+    
 }
 
 
@@ -123,6 +129,15 @@ form div:hover {
     color: aqua;
 }
 
+
+
+/* action yhsal fel mobile */
+@media (max-width: 767px)
+{
+    .container{
+        height: 85vh;
+    }
+}
 
 
 
