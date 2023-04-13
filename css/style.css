@@ -41,14 +41,15 @@ body{
 /* mobile from zero to 768 */
 @media(min-width: 768px) {
   .container{
-    width: 750px;
+    width: 744px;
+    /* width: 800px; */
   }
 }
 
 /* medium screen */
 @media(min-width: 992px){
     .container{
-        width: 970px;
+        width: 912px;
     }
 }
 
@@ -73,9 +74,6 @@ body{
 /* ==================================================================================================================================================================== */
 
 
-/* .header{
-    position: relative;
-} */
 
 .header .container{
     /* display: flex; */
@@ -92,66 +90,58 @@ body{
     left: 0px;                       /*3shan mayb2ash fel mesaha was3a fel awil keda */
 }
 
-.header p{
-    position: absolute;              /*belnesba ll container aly howa feh*/
-    font-size: 22px;
-    font-style: italic;
-    right: 9px;                    /*3shan yzbot fel makan al monaseb ana ma3rfsh aslan hib2a fen lma al8ihom */
-    top: 92%;
-    transform: translateY(-50px);  /*3ashan yzbot bardo*/
-} 
 
 
-.header p::first-letter {       /*awil harf fel text de*/
-    color: #f9b940;     
-    font-size: xx-large;
+.header .links {
+    position: relative;
 }
 
-ul{
-    list-style: none;        /*3ashan ashel el dot aly ganbha*/
-    position: relative;     /*3shan azabt el rigth 3la hasaf na ana shaif enha keda ahla*/
-    margin: 25px 0 25px 0;          /*3shan ab3do men fo2 w ta7t w keda*/
-    right: -60px;
+
+
+.header .links ul{
+    list-style-type: none;
+    margin: 0px;
+    min-width: 155px;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    top: 47px;
+    display: none;
+    z-index: 1; 
 }
 
-nav .container ul{
-    display: flex;
-    flex-direction: row-reverse;  
-    /*mkasel a3keshom men el html bsraha*/
-}
-
-nav .container ul li{
-    flex-grow: 1;  /*ytmadedo kolhom lhad ma ynlo al container aly homa gwah default 0*/
-}
-
-nav .container ul i{
-    padding-right: 5px;       /*3ashan ab3ed el icon 3an el text aw el link ya3ni*/
-}
-
-nav .container a{
-    text-decoration: none;   /*3ashan ashel el line aly ta7t el link*/
-    color:black;
+.links .icon{
+    position: absolute;
+    right: 0px;
+    padding: 25px;
 
 }
 
-nav .container ul li a:hover{      /*lama agi a2af 3la el link a3mil kol al kalam aly ta7t*/
-    color:blue;
-    border-bottom: 1px solid red;   /*line keda men ta7t*/
-    padding-top: 5px;                 /*ytala3 el kilma lfo2 keda 7aba*/
+.header .links:hover ul{     /*lazem akhli baly mn el spaces w el tarteb lazem el haga aly hatzher de ba3d el hover*/
+    display: block;         /*eshan tzher*/
 }
 
-/* hena ba2olo fel noskha bta3et al mobile a3mil al kalam dah */
-@media (max-width:767px){
-    nav .container  ul i{         /*bel nesba ll icon shela 3shan shaklha mesh a7san haga fel mobile*/
-        display: none;    
-    }
-    ul{
-        right: -13px;    /*w list hazahzah7a shwia keda 3shan shaklha yb2a a7san*/
-    }
-    
- 
- 
+.links ul div{
+    padding: 4px 0px 10px 4px;
 }
+
+.header .links ul li a{
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3;
+}
+
+.header .links ul li a:hover{
+    padding-left: 25px;
+        
+}
+
+.header .links ul div:not(:last-child ) {
+    border-bottom: 1px solid ;
+
+}
+
 
 
 
