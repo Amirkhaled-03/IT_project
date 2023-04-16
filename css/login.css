@@ -6,9 +6,13 @@
     text-decoration: none;
 }
 
+
+:root{
+    --color:#ba0ac9 ;
+}
 body{
     font-family: 'Cairo', sans-serif;
-    background-color:#242d34;
+    /* background-color:#242d34; */
 
 }
 
@@ -82,11 +86,11 @@ form div i{
 }
 
 form div:hover i{
-    color:aqua;
+    color:var(--color);
 }
 
 form div:hover {
-    border-bottom-color:aqua;
+    border-bottom-color:var(--color);
 
 }
 
@@ -98,7 +102,7 @@ form div:hover {
 }
 
 .forget:hover{
-    color:aqua;
+    color:var(--color);
 }
 
 .submit{
@@ -111,7 +115,7 @@ form div:hover {
 }
 
 .submit:hover{
-    background-color: aqua;
+    background-color:var(--color);
     padding-left: 15px;
     
 }
@@ -127,7 +131,7 @@ form div:hover {
 }
 
 .registration:hover{
-    color: aqua;
+    color: var(--color);
 }
 
 
@@ -138,6 +142,12 @@ form div:hover {
     .container{
         height: 85vh;
     }
+
+    /* .box{
+        height: 100%;
+    } */
+
+
 }
 
 

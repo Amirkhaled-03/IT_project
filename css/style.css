@@ -134,6 +134,7 @@ body{
 
 .header .links ul li a:hover{
     padding-left: 25px;
+    /* padding: 18px 0 18px 25px; */
         
 }
 
