@@ -247,7 +247,7 @@ header .links ul li:not(:last-child){
 
 
 
-/* .tour{
+ /*.tour{
     padding: 4px;
     background-color: #ebeced;
     margin: 20px;
@@ -257,7 +257,7 @@ header .links ul li:not(:last-child){
 
 } */
 
-/* .tour .info div{
+ /*.tour .info div{
     margin-left: 10px;
 }
 
@@ -269,9 +269,9 @@ header .links ul li:not(:last-child){
 
 .tour .info div p i{
     color: blue;
-} */
+} 
 
-/* .tour .info div .date{
+ .tour .info div .date{
     font-size: 15px;
 }
 
@@ -286,9 +286,9 @@ header .links ul li:not(:last-child){
 .tour .hotel{
     margin:0 4px 0 4px ;
 
-} */
+} 
 
-/* .tour .hotel p{
+ .tour .hotel p{
     margin: 5px 0 5px 0;
     
 }
