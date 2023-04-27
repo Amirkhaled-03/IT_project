@@ -222,7 +222,8 @@ header .links ul li:not(:last-child){
 }
 
 .srv div{
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    margin-left: 25px;
 
 }
 
@@ -247,105 +248,8 @@ header .links ul li:not(:last-child){
 
 
 
- /*.tour{
-    padding: 4px;
-    background-color: #ebeced;
-    margin: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 8px;
-
-
-} */
-
- /*.tour .info div{
-    margin-left: 10px;
-}
-
-.tour .info div p{
-    font-size: 16px;
-    margin-bottom: 4px;
-
-}
-
-.tour .info div p i{
-    color: blue;
-} 
-
- .tour .info div .date{
-    font-size: 15px;
-}
-
-.tour .info{
-    display: flex;
-}
-
-.tour img{
-    width: 217px;
-}
-
-.tour .hotel{
-    margin:0 4px 0 4px ;
-
-} 
-
- .tour .hotel p{
-    margin: 5px 0 5px 0;
-    
-}
-
-.tour .hotel i{
-    color: blue;
-
-}
-
-.tour .hotel .srv{
-    display: flex;
-
-}
-
-.tour .hotel .srv div{
-    margin-left: 15px;
-
-}
-
-.diving{
-    margin-top: 10px;
-}
-
-.diving div{
-    margin-left: 15px;
-}
-
-.submit{
-    margin-left: 50%;
-    
-    font-size: 32px;
-}
-
-.book{
-    padding: 2px 9px 2px 9px;
-    color: white;
-    background-color: black;
-    
-}
-
-.book:hover{
-    color: black;
-    background-color: white;
-} */
 
 
 
 
-
-
-
-
-/* tkhtefi fel mobile action yhsal fel mobile*/
-/* @media (max-width:767px) {
-  
-    .tour .info img{
-        width: 160px;
-        height: 160px;
-    }
 
