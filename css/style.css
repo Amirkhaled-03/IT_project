@@ -7,6 +7,12 @@ border bos ma3nah width w heigth bta3 el element h inculde el width bta3 ay haga
 w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
   
 */
+
+:root{
+    --h2_section_color:#800000;
+}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -183,6 +189,32 @@ video{
     font-size:29px;
 }
 
+/* end landing vedio */
+
+/* starts services */
+.services-section{
+    min-height: 386px;  /*lazem min 3shan maybozsh fel mobile w fel 3adi yb2a shaklo .. hanshof fe discord*/
+    background-color:#ebeced; 
+    padding-top: 60px;   /*3ashan yb3ed 3an el haga aly fo2*/ 
+    margin-top: 40px;     /*3ashan yb3id 3an el haga aly ta7t*/
+}
+
+.services-section h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 80px;
+    color:var(--h2_section_color);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.services-section ol li{
+    margin: 0 0 13px 7px;
+}
+
+
+/* end services */
+
 /* start slide show */
 
 /* Hide the images by default */
@@ -217,8 +249,10 @@ display: none;
 
 @media (max-width:767px) {
     .slide_show img{
+        width: 303px;
+        height: 214px;
 
-    width:344px;}
+    }
     /* height: 273px;*/
     
 }
@@ -318,7 +352,7 @@ to {opacity: 1}
     text-align: center;
     padding-bottom: 20px;
     font-size: 80px;
-    color:#800000;
+    color:var(--h2_section_color);
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -336,12 +370,25 @@ to {opacity: 1}
 
 }
 
+.imgs-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 400px);
+
+}
+
+.imgs-container img{
+    width: 300px;
+    height: 190px;
+}
+
 /* action yhsal fel mobile */
 @media (max-width: 767px)
 {
-  .about-section h2 {
+  .about-section h2, .services-section h2 {
     font-size: 45px;         /*ba2alil wl font size 3shan saklo yb2a helw*/
   }
+
+  
  .about-section img{
     display: none;    /*bashil el img aslan fel mobile*/
 }
@@ -358,7 +405,7 @@ to {opacity: 1}
     text-align: center;
     padding-bottom: 20px;
     font-size: 80px;
-    color:#800000	;
+    color:var(--h2_section_color);
     font-weight: normal;
     text-transform: uppercase;
 }
