@@ -186,8 +186,9 @@ header .links ul li:not(:last-child){
 }
 
 .tours img{
-    width: 130px;
-    height: 122px;
+    width: 216px;
+    height: 194px;
+ 
     margin: 3px;
 }
 
@@ -240,6 +241,7 @@ header .links ul li:not(:last-child){
 .submit{
     font-size: 18px;
     padding: 2px;
+    border: none;
     border-radius: 4px;
 }
 
