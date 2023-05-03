@@ -79,30 +79,44 @@ body{
 
 /* ==================================================================================================================================================================== */
 
-table{
+.info{
+    /* width: 500px; */
+    /* background-color: red; */
+    overflow-x: auto;
+}
+
+/* tzher fel mobile */
+@media (min-width:767px) {
+    
+}
+
+.info table{
     margin: 20px auto;
     padding: 10px;
-    /* width: 100%; */
     border-spacing: 0;
-    /* background-color:#eee; */
+    width: 100%;
 }
 
 table tr th{
-    background-color:#6c7ae0;
+    background-color:black;
+    color: white;
     padding: 0px 23px 7px 0px;
     text-align: left;
 }
 
 table tr td{
-    /* background-color: #800000; */
     padding: 3px 35px 3px 0px;
     color: gray;
 }
 
+table tr  th,table tr td{
+    padding: 10px;
+}
+
 table tr:nth-child(even){
-    background-color: red;
+    background-color:#f8f8f8;
 }
 
 table tr:nth-child(odd){
-    background-color:#f8f6ff;
+    background-color:white
 }
