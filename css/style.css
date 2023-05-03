@@ -493,7 +493,7 @@ font-weight: 600;
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(8,5vw);
     grid-gap: 10px;
-    margin:40px;
+    margin: 110px;
     padding:20px;
 }
 
