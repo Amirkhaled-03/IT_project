@@ -414,7 +414,7 @@ to {opacity: 1}
   
  .about-section img{
     display: none;    /*bashil el img aslan fel mobile*/
-}
+ }
 
 }
 /* end about */
@@ -593,7 +593,5 @@ figcaption {
         grid-row-end: 4;
     }
 }
-@media (max-width:760) {
-    
-}
+
 /* End of tours gallery */
