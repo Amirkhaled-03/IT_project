@@ -42,7 +42,7 @@ function ConfirmPass(form){
         }
     if(password != confirmPassword){
             alert("Passwords do not match, please check them")
-            return false;
+            return false; 
         }
 
 }
