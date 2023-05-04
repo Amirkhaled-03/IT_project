@@ -1,0 +1,16 @@
+[
+    {
+        "id": "645385cd23f3c",
+        "access": "user",
+        "username": "_subwayy_",
+        "email": "a7medhisham15@gmail.com",
+        "password": "$2y$10$s8E82SJVwue9L0Casm9pZ.uOaZPPD6s\/sCLy2LKvpVqkGoIRbHF9G",
+        "phone": "3232132131312",
+        "gender": "male",
+        "hometown": "Canada",
+        "places": [
+            "Ain Sokhna",
+            "Alexandria"
+        ]
+    }
+]
