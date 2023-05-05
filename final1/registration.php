@@ -31,7 +31,7 @@
                     <?php
                         if(isset($emailExist)) echo "<p>this email is already exist.</p>";
                     ?>
-                    <input type="email" name="email" placeholder="Enter your email" id="email" title="For example: Google@gmail.com" />
+                    <input type="text" name="email" placeholder="Enter your email" id="email" title="For example: Google@gmail.com" />
                 </div>
 
                 <div>
