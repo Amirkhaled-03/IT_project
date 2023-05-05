@@ -1,6 +1,6 @@
+<?php // include('register.php'); ?> 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
@@ -9,23 +9,21 @@
         <title>EgyEye Registration</title>
     </head>
 
-
     <body>
+
         <div>
-
-
             <h2>Register</h2>
 
-
-            <form action="register.php" method="post" name="form1">
-
+            <form action="register.php" method="post" name="register" onsubmit="return validateForm()">
 
                 <div>
-                    <label for="username">Username</label>
+                    <label for="first_name">First name</label>
                     <span><ion-icon name="person-outline"></ion-icon></span>
-                    <input type="text" name="username" placeholder="Enter your name" id="username" />
+                    <input type="text" name="first_name" placeholder="Enter first name" id="first_name" />
+                    <label for="last_name">Last name</label>
+                    <span><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" name="last_name" placeholder="Enter last name" id="last_name" />
                 </div>
-
 
                 <div>
                     <label for="email">Email</label>
@@ -33,30 +31,26 @@
                     <?php
                         if(isset($emailExist)) echo "<p>this email is already exist.</p>";
                     ?>
-                    <input type="email" name="email" placeholder="Enter your email" id="email" title="For example: Google@gmail.com" required />
+                    <input type="email" name="email" placeholder="Enter your email" id="email" title="For example: Google@gmail.com" />
                 </div>
-
 
                 <div>
                     <label for="password">Password</label>
                     <span><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" name="password" placeholder="Enter your password" id="password"  required />
+                    <input type="password" name="password" placeholder="Enter your password" id="password" />
                 </div>
-
 
                 <div>
                     <label for="confirm_password">Confirm Password</label>
                     <span><ion-icon name="lock-closed-outline"></ion-icon></span>
-                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required />
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" />
                 </div>
-
 
                 <div>
                     <label for="phone">Phone Number</label>
                     <span><ion-icon name="call-outline"></ion-icon></span>
-                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]+" title="Enter only digits" />
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]+" min="11" max="11" title="Enter only digits" />
                 </div>
-
 
                 <div>
                     <label>Gender</label><br/>
@@ -65,7 +59,6 @@
                     <input type="radio" name="gender" value="female" id="female" />
                     <label for="female">Female</label>
                 </div>
-
 
                 <div>
                     <label for="country">Country</label>
@@ -97,7 +90,6 @@
                     </select>
                 </div>
 
-
                 <div>
                     <label for="places[]">visited Places</label><br>
                     <input type="checkbox" name="places[]" value="Ain Sokhna" id="1" />
@@ -122,14 +114,23 @@
                     <label for="10">Siwa Oasis</label>
                 </div>
 
+                <div>
+                    <label for="agree">
+                        <input type="checkbox" id="agree" required />
+                        "I agree to the Terms & Conditions"
+                    </label>
+                </div>
 
-                    <input type="submit" name="register" value="Register" onclick="ValidateEmail(document.form1.email),ConfirmPass(form1)"/><br/>
-                    <a href="login.html">sign in</a>
+                    <input type="submit" name="register" value="Register" /><br/>
+
+                <div>
+                    <p>"Already have an account? "<a href="login.html">sign in</a>
+                </div>
+
             </form>
         </div>
             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-            <script src="Validation.js"></script>
+            <script src="validation.js"></script>
     </body>
 </html>
-
