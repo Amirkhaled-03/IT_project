@@ -10,6 +10,7 @@ w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
 
 :root{
     --h2_section_color:#800000;
+    --color-sec:#ebeced;
 }
 
 
@@ -79,16 +80,22 @@ body{
 
 /* ==================================================================================================================================================================== */
 
+/* .title{
+    padding: 12px;
+    background-color: black;
+    color: white;
+} */
+
+
 .page{
     
     display: grid;
-    grid-template-columns: repeat(10 , 1fr);
+    grid-template-columns: repeat(1 , 1fr);
     grid-template-rows: 63px auto 50px;
-    grid-template-areas:"head head head head head head head head head head "
-                         " cont cont cont cont cont cont cont  cont cont cont"
-                         "foot foot foot foot foot foot foot foot foot foot " ;
+    grid-template-areas:"head "
+                         " cont"
+                         " foot " ;
 }
-
 
 
 
@@ -101,6 +108,7 @@ body{
 .header{
     grid-area: head;
 }
+
 .header .container{
     /* display: flex; */
     width: 100%;                      /*3shan el background color yakhod el width kolo .. over ride el value bta3et el container*/
@@ -133,7 +141,7 @@ body{
     position: absolute;
     right: 0;
     top: 47px;
-    display: none;
+    display: none;  
     z-index: 1; 
 }
 
@@ -161,7 +169,6 @@ body{
 
 .header .nav ul li a:hover{
     padding-left: 25px;
-    /* padding: 18px 0 18px 25px; */
         
 }
 
@@ -171,6 +178,7 @@ body{
     border-bottom: 1px solid ;
 
 }
+/* end header */
 
 
 
@@ -216,10 +224,12 @@ video{
 
 /* starts services */
 .services-section{
-    min-height: 386px;  /*lazem min 3shan maybozsh fel mobile w fel 3adi yb2a shaklo .. hanshof fe discord*/
-    background-color:#ebeced; 
+    /* min-height: 386px;  lazem min 3shan maybozsh fel mobile w fel 3adi yb2a shaklo .. hanshof fe discord */
+    background-color:var(--color-sec); 
     padding-top: 60px;   /*3ashan yb3ed 3an el haga aly fo2*/ 
-    margin-top: 40px;     /*3ashan yb3id 3an el haga aly ta7t*/
+    /* margin-top: 40px;     3ashan yb3id 3an el haga aly ta7t */
+    padding-bottom: 35px;
+    margin: 40px 0 24px 0
 }
 
 .services-section h2{
@@ -241,7 +251,7 @@ video{
 /* Start of tours gallery*/
 
 .pics{
-    max-width: 662px;
+    /* max-width: 662px; */
     margin: 0 12% 0 16%;
     
 }
@@ -251,6 +261,9 @@ video{
 {
     .pics{
         margin: 0;
+    }
+    .gal{
+        padding: 0;
     }
 }
 
@@ -441,10 +454,12 @@ to {opacity: 1}
 /* start about */
 
 #About{                  /*# ma3naha a3mil style pas pel id 3shan aya talba keda */
-    min-height: 386px;  /*lazem min 3shan maybozsh fel mobile w fel 3adi yb2a shaklo .. hanshof fe discord*/
+    /* min-height: 386px;  lazem min 3shan maybozsh fel mobile w fel 3adi yb2a shaklo .. hanshof fe discord */
     background-color:#ebeced; 
     padding-top: 60px;   /*3ashan yb3ed 3an el haga aly fo2*/ 
     margin-top: 16px;     /*3ashan yb3id 3an el haga aly ta7t*/
+    margin: 3px 0px 26px 0;
+
 }
 
 .about-section .container{
@@ -485,23 +500,13 @@ to {opacity: 1}
 }
 
 /* action yhsal fel mobile */
-@media (max-width: 767px)
-{
-  .about-section h2, .services-section h2 {
-    font-size: 45px;         /*ba2alil wl font size 3shan saklo yb2a helw*/
-  }
 
-  
- .about-section img{
-    display: none;    /*bashil el img aslan fel mobile*/
- }
-
-}
 /* end about */
 /* start contacts */
 #Contacts{
-    min-height: 330px;  /*lazem min 3shan ytmaded m3aia w maybozsh fel mobile*/
+    /* min-height: 330px;  lazem min 3shan ytmaded m3aia w maybozsh fel mobile */
     padding-top: 60px;  /*bab3do 3an a*/
+    margin-bottom: 50px;
 }
 
 .contacts-section h2{
@@ -566,4 +571,19 @@ font-weight: 600;
 }
 
 /* end footer */
+
+
+/* action in mob */
+@media (max-width: 767px)
+{
+  .about-section h2, .services-section h2 {
+    font-size: 45px;         /*ba2alil wl font size 3shan saklo yb2a helw*/
+  }
+
+  
+ .about-section img{
+    display: none;    /*bashil el img aslan fel mobile*/
+ }
+
+}
 

@@ -3,13 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 
 :root{
     --color:#ba0ac9 ;
 }
+
 body{
     font-family: 'Cairo', sans-serif;
     /* background-color:#242d34; */
@@ -18,10 +19,9 @@ body{
 
 .container{
     display: flex;
-    align-content: center;
     justify-content: space-around;
-    height: 100vh;
-    align-items: center;
+    position: relative;
+    top:120px ;
 }
 
 .box{
@@ -29,8 +29,7 @@ body{
     border-radius: 10px;
     padding: 45px;
     width: 376px;
-    max-width: 95%;
-    box-shadow: 5px 5px 10px 1px rgb(0, 0, 0, 10%);
+    /* max-width: 95%; */
 
 }
 
@@ -54,6 +53,7 @@ form div{
     border-bottom: 1px solid #b0b0b0;
     margin-bottom: 15px;
 }
+
 form input{
     background-color: black;
     color: white;
@@ -62,8 +62,7 @@ form input{
     padding: 7px;
     margin-bottom: 14px;
     width: 100%;
-    letter-spacing: 1.3px;
-    /* display: block; */
+    letter-spacing: 1.3px; 
     
 }
 
@@ -97,7 +96,6 @@ form div:hover {
 .forget{
     display: flex;
     justify-content: flex-end;
-    text-decoration: none;
     color: #b0b0b0;
 }
 
@@ -137,10 +135,14 @@ form div:hover {
 
 
 /* action yhsal fel mobile */
-@media (max-width: 767px)
+@media (max-width: 540px)
 {
     .container{
-        height: 85vh;
+        top:50px ;
+    }
+
+    body{
+        background-color: black;
     }
 
 }
