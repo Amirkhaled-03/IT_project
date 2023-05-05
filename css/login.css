@@ -18,13 +18,20 @@ body{
 }
 
 .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 20% auto 20%;
+    /*display: flex;
     justify-content: space-around;
     position: relative;
-    top:120px ;
+    top:120px ;*/
 }
 
 .box{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     background-color:black;
     border-radius: 10px;
     padding: 45px;
