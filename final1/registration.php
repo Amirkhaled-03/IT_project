@@ -14,7 +14,7 @@
         <div>
             <h2>Register</h2>
 
-            <form action="register.php" method="post" name="register" onsubmit="return validateForm()">
+            <form action="register.php" method="post" name="form1" onsubmit="return ValidateEmail(form1)">
 
                 <div>
                     <label for="first_name">First name</label>
@@ -131,6 +131,6 @@
         </div>
             <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-            <script src="validation.js"></script>
+            <script src="Validation.js"></script>
     </body>
 </html>
