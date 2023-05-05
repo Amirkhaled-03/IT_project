@@ -37,6 +37,16 @@
             <?php   
             $data = file_get_contents('data.json');
             $data = json_decode($data, true);
+            $count =0;
+            foreach($data as $num){
+                if (isset($num['username'])){
+                    $count++;
+                }
+                else{
+                    break;
+                }
+            }
+            echo 'Users counter','<br>' . $count;
             $index = 0;
             foreach($data as $row){
                 echo '<tr>';
@@ -51,6 +61,7 @@
             $index++;
 
             }
+
             ?>
         </tbody>
 

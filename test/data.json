@@ -1,0 +1,19 @@
+[
+    {
+        "access": "admin",
+        "id": "1",
+        "username": "ahmed_subway#1",
+        "first_name": "ahmed",
+        "last_name": "subway",
+        "email": "a7medhisham15@gmail.com",
+        "phone": "01293433525",
+        "password": "$2y$10$79XXlh3bhI\/ffrmwzkV6DOzbc9NUQ63.zcEWYfb73ywMaI1a29\/cq",
+        "gender": "male",
+        "hometown": null,
+        "country": "Argentina",
+        "places": [
+            "Ain Sokhna",
+            "Alexandria"
+        ]
+    }
+]
