@@ -33,10 +33,11 @@ body{
 */
 .container {               /*eshan el haga tege fe nos el safha w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa*/
     /* width: 600px; */
-    padding-left: 15px;
+    padding-left: 15px;  
     padding-right: 15px;
     margin-left: auto;    /*kol dah3ashan el noskha bta3et el phone matb2ash el kalam awil el page*/
-    margin-right: auto;  
+    margin-right: auto; 
+
 }
 
 /* Small */
@@ -148,17 +149,28 @@ header .links ul li:not(:last-child){
 
 /* start tour */
 
-.content{
-    display: flex;
+/*.content{
+   /* display: flex;  FFFFFFFFFFFFFF
 
 }
+*/
 
 .kol_haga_gowa_hena{
-    display: flex;
+    /*display: flex; FFFFFFFFFFFFFFF*/
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
 }
 
+.all_tours {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+}
 
 .aside{
+    grid-column-start: 1;
+    grid-column-end: 2;
     width: 219px;
     padding: 10px;
     height: 100vh;
@@ -208,7 +220,10 @@ header .links ul li:not(:last-child){
         display: block;
     
     }
-
+    .kol_haga_gowa_hena {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     .tours img{
         width: 170px;
         height: 81px;
