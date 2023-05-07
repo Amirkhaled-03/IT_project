@@ -1,17 +1,34 @@
-{
-    "1": {
+[
+    {
         "access": "admin",
-        "id": 2,
-        "username": "Egy_Eye#2",
+        "id": 1,
+        "username": "Egy_Eye#52",
         "first_name": "Egy",
         "last_name": "Eye",
         "email": "egyeye@gmail.com",
-        "password": "$2y$10$79g3SymFG6Ge68gxdRDHwu\/9o3IPtjbCcX\/e2JPHOqu5FMdEYbA96",
-        "phone": "01283856454",
+        "password": "$2y$10$T.4Y2lV9ZApcfVc71BcYPOOFfYz7GRHJE024G099dutQ6zDktrIbi",
+        "phone": "012635654",
         "gender": "male",
-        "country": "Egypt",
+        "country": "France",
         "places": [
-            "Cairo"
+            "Alexandria",
+            "Hurghada"
+        ]
+    },
+    {
+        "access": "user",
+        "id": 2,
+        "username": "elkot_2#53",
+        "first_name": "elkot",
+        "last_name": "2",
+        "email": "elkot200@gmail.com",
+        "password": "$2y$10$.uczjICHhpBBHLILJE0yoerxXO1wH0Brn2EA786SdAgtWDKM77ZIC",
+        "phone": "123456789",
+        "gender": "male",
+        "country": "France",
+        "places": [
+            "Alexandria",
+            "Dahab"
         ]
     }
-}
+]

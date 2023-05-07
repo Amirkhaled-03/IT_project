@@ -1,0 +1,17 @@
+{
+    "1": {
+        "access": "admin",
+        "id": 2,
+        "username": "Egy_Eye#2",
+        "first_name": "Egy",
+        "last_name": "Eye",
+        "email": "egyeye@gmail.com",
+        "password": "$2y$10$79g3SymFG6Ge68gxdRDHwu\/9o3IPtjbCcX\/e2JPHOqu5FMdEYbA96",
+        "phone": "01283856454",
+        "gender": "male",
+        "country": "Egypt",
+        "places": [
+            "Cairo"
+        ]
+    }
+}

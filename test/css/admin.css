@@ -1,0 +1,122 @@
+
+/*start global rules */
+
+/*
+bos sizing el fel asan byb2a content bos w dah ma3nah en khod el widrh bta3 el element w zawid 3leh padding w margin wkeda
+border bos ma3nah width w heigth bta3 el element h inculde el width bta3 ay haga ana ha3milha border maslan
+w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
+  
+*/
+
+:root{
+    --h2_section_color:#800000;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+html{
+    scroll-behavior: smooth;     /*3shan lma agi a3mil scroll el donia tb2a basyta mttkhtefsh */
+
+}
+
+body{  
+    font-family: 'Cairo', sans-serif;   /*font size that used in site*/
+    
+}
+
+
+/*
+  eshan el hagat kolha tegi ba3d width mo3in matlz2sh kolha awil al safha  w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa
+*/
+.container {             
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;    /*kol dah3ashan el noskha bta3et el phone matb2ash el kalam awil el page*/
+    margin-right: auto;  
+}
+
+/* responsive w keda  */
+
+/* mobile from zero to 768 */
+@media(min-width: 768px) {
+  .container{
+    width: 744px;
+    /* width: 800px; */
+  }
+}
+
+/* medium screen */
+@media(min-width: 992px){
+    .container{
+        width: 912px;
+    }
+}
+
+/* large screens */
+@media(min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/*end global rules */
+
+/* tkhtefi fel mobile action yhsal fel mobile*/
+@media (max-width:767px) {
+    
+}
+
+/* tzher fel mobile */
+@media (min-width:767px) {
+    
+}
+
+/* ==================================================================================================================================================================== */
+
+.info{
+    /* width: 500px; */
+    /* background-color: red; */
+    overflow-x: auto;
+}
+
+/* tzher fel mobile */
+@media (min-width:767px) {
+    
+}
+
+.info table{
+    margin: 20px auto;
+    padding: 10px;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table tr th{
+    background-color:black;
+    color: white;
+    padding: 0px 23px 7px 0px;
+    text-align: left;
+}
+
+table tr td{
+    padding: 3px 35px 3px 0px;
+    color: gray;
+}
+
+table tr  th,table tr td{
+    padding: 10px;
+}
+
+table tr:nth-child(even){
+    background-color:#f8f8f8;
+}
+
+table tr:nth-child(odd){
+    background-color:white
+}

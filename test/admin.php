@@ -1,116 +1,121 @@
+<?php
+    session_start();
+
+    // if(!isset($_SESSION['email'])){
+    //     header('Location: ./log.php');
+    //     exit();
+    // }
+
+    $trips = json_decode(file_get_contents('trips.json'),true);
+
+    $users = json_decode(file_get_contents('data.json'), true);
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" href="css/admin2.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>admin</title>
-
-    <!-- the main stylesheet -->
-    <link rel="stylesheet" href="admin1.css">
-    <!-- render all the elememts -->
-    <link rel="stylesheet" href="normalize.css">
-    <!-- font awesome libirary -->
-    <link rel="stylesheet" href="all.min.css">
-    <!-- google  font sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
- 
+    <title>Admin Page</title>
 </head>
-
-
-<body>
-
-
-   <div class="container">
-     <div class="info">
-     <a href="add.php" class="btn btn-primary">Add</a>
-     <table>
-        <thead>
-        <tr>
-            <th>ID</th>
-            <th>Username</th>
-            <th>Name</th>
-            <th>phone Num</th>
-            <th>Country</th>
-            <th>Email</th>
-            <th>access</th>
-            <th>Action</th>
-        </tr>  
-        </thead>
-        <tbody>
-            <?php   
-            $data = file_get_contents('data.json');
-            $data = json_decode($data, true);
-            $count =0;
-            $userscount= 0;
-            $adminscount= 0;
-            foreach($data as $num){
-                if (isset($num['username'])){
-                    $count++;
-                }
-                else{
-                    break;
-                }
-            }
-            echo 'All accounts',' ' . $count;
-            foreach($data as $num){
-                if (isset($num['access']) && $num['access'] == 'user'){
-                    $userscount++;
-                }
-                else{
-                    break;
-                }
-            }
-            echo 'Users',' ' . $userscount;
-            foreach($data as $num){
-                if (isset($num['access']) && $num['access'] == 'admin' ){
-                    $adminscount++;
-                }
-                else{
-                    break;
-                }
-            }
-            echo 'Admins',' ' . $adminscount;
-            $index = 0;
-            foreach($data as $row){
-                echo '<tr>';
-                    echo '<td>' . $row['id']        .'</td>';
-                    echo '<td>' . $row['username']        .'</td>';
-                    echo '<td>' . $row['first_name'] .' ' . $row['last_name']         .'</td>';
-                    echo '<td>' . $row['phone']        .'</td>';
-                    echo '<td>' . $row['country']        .'</td>';
-                    echo '<td>' . $row['email']        .'</td>';
-                    echo '<td>' . $row['access']        .'</td>';
-                    // echo '<td>' . $row['password']        .'</td>';
-                    echo "
-                            <td>
-                            <a href= 'edit.php?index=".$index."' class='btn btn-success btn-sm'>Edit</a>
-                            <a href='Test.php?action=delete&index=".$index."'>Delete</a>
-                            </td>                  
-                    
-                    
-                    ";
-                echo '</tr>';    
-
-            $index++;
-
-            }
-            
-
-
-            ?>
-        </tbody> 
-
-        </table>
-
-    </div>
-
-   </div>
+<body onload="Fhide()">
+  <div class="container">
     
+  
+    <h2>Manage Trips</h2>
+    <div class="add">
+     <form action="add_trips.php" class="addtrip">
+      <div id="hide">
+       <div class="divflex">
+        <div>
+            <label for="image">Destination Photo</label>
+            <input type="text" id="image" name="image" required/>
+          </div>
+          <!-- <img src="" alt="tour image" name="image" id="image" required /><br/> -->
+          <div>
+            <label for="destination">Destination Name</label>
+            <input type="text" name="destination" id="destination" required />
+          </div>
+       </div>
+        <div class="divflex">
+          <div>
+            <label for="hotel">Hotel Details</label>
+            <textarea name="hotel" id="hotel" required></textarea>
+          </div>
+          <div>
+            <label for="from_date">From Date/Time</label>
+            <input type="datetime-local" name="from_date" id="from_date" required />
+          </div>
+        </div>
+        <div class="divflex">
+          <div>
+            <label for="to_date">To Date/Time</label>
+            <input type="datetime-local" name="to_date" id="to_date" required />
+          </div>
+          <div>
+            <label for="excursions">List of Excursions</label>
+            <textarea name="excursions" id="excursions" required></textarea>
+          </div>
+        </div>
+       <div class="divflex">
+        <div>
+            <label for="price">Price</label>
+            <input type="number" name="price" id="price" required />
+          </div>
+          <div>
+            <label for="services">Services</label>
+            <textarea name="services" id="services" required></textarea>
+          </div>
+       </div>
+      </div>
+      <script>
+        function myFunc(){
+        document.getElementById("hide").style.display = "block";
+        }
+        function Fhide(){
+          document.getElementById("hide").style.display = "none";
+        }
+        </script>
+        
+      </form>
+      <button type="submit" value="Add Trip" name="add" onclick="myFunc()">Add Tour</button> 
+        <button type="submit" value="Remove Trip" name="add" ><a href="admin.php">Remove</a></button> 
+     </div>
+  
+    <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Destination</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <?php
+       foreach ($trips as $trip):?>
+        <tr>
+          <td><?php echo $trip['id'];?></td>
+          <td><?php echo $trip['destination'];?></td>
+          <td>
+          <form action="remove_trip.php" method="post">
+              <input type="hidden" name="id" value="<?php echo $trip['id'];?>">
+              <button type="submit">Remove</button>
+          </form>
+          </td>
+        </tr>
+      <?php 
+     endforeach;?>
+    </tbody>
+  </table>
+  <!-- <h2>Search for Trips</h2>
+  <form action="search_trip.php" method="get">
+    <label for="destination">Destination Name</label>
+    <input type="text" name="destination"required /><br/>
+    <input type="search" value="Search" name="search" />
+  </form> -->
+  </div>
+
 </body>
 </html>
-
-
