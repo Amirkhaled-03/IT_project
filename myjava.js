@@ -30,5 +30,4 @@ function autoSlide(){
     showSlides(slideIndex += 1);
   
 }
-setInterval(autoSlide,500);
 
