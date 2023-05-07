@@ -22,8 +22,12 @@
 
 
 <body>
-    <a href="add.php" class="btn btn-primary">Add</a>
-    <table>
+
+
+   <div class="container">
+     <div class="info">
+     <a href="add.php" class="btn btn-primary">Add</a>
+     <table>
         <thead>
         <tr>
             <th>ID</th>
@@ -100,12 +104,13 @@
             ?>
         </tbody> 
 
-    </table>
+        </table>
 
+    </div>
+
+   </div>
     
 </body>
 </html>
 
-<?php 
 
-?> 

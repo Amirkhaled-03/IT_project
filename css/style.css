@@ -110,13 +110,10 @@ body{
 }
 
 .header .container{
-    /* display: flex; */
+  
     width: 100%;                      /*3shan el background color yakhod el width kolo .. over ride el value bta3et el container*/
-    /* height: 61px; */
-    /* background-color: #ebeced; */
-    /* justify-content: end; */
+    
     position: relative;              /*lazem position relative hena 3shan el mohtwa aly howah bitwaza3 3ala hasab el ab3ad bta3to*/
-    /* grid-area: head; */
 }
 
 .header img{
