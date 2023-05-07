@@ -11,6 +11,7 @@
         $gender = $_POST['gender'];
         $country = $_POST['country'];
         $places = isset($_POST['places']) ? $_POST['places'] : array();
+        $access = $_POST['access'];
 
         $users = json_decode(file_get_contents('data.json'), true);
 
@@ -33,7 +34,7 @@
         }
 
         $user_data = [
-            'access' => 'user',
+            'access' => $access,
             'id' => $id,
             'username' => $first_name.'_'.$last_name.'#'.$id,
             'first_name' => $first_name,
@@ -50,7 +51,7 @@
         $users_data = json_encode($users, JSON_PRETTY_PRINT);
 
         if(file_put_contents('data.json', $users_data)){
-            header('Location: admin.php');
+            header('Location:admin.php');
             exit();
         } else {
             echo "Failed to save registration data.";

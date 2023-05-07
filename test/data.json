@@ -1,19 +1,17 @@
-[
-    {
+{
+    "1": {
         "access": "admin",
-        "id": "1",
-        "username": "ahmed_subway#1",
-        "first_name": "ahmed",
-        "last_name": "subway",
-        "email": "a7medhisham15@gmail.com",
-        "phone": "01293433525",
-        "password": "$2y$10$79XXlh3bhI\/ffrmwzkV6DOzbc9NUQ63.zcEWYfb73ywMaI1a29\/cq",
+        "id": 2,
+        "username": "Egy_Eye#2",
+        "first_name": "Egy",
+        "last_name": "Eye",
+        "email": "egyeye@gmail.com",
+        "password": "$2y$10$79g3SymFG6Ge68gxdRDHwu\/9o3IPtjbCcX\/e2JPHOqu5FMdEYbA96",
+        "phone": "01283856454",
         "gender": "male",
-        "hometown": null,
-        "country": "Argentina",
+        "country": "Egypt",
         "places": [
-            "Ain Sokhna",
-            "Alexandria"
+            "Cairo"
         ]
     }
-]
+}

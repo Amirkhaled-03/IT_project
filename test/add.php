@@ -58,7 +58,14 @@
                     <input type="radio" name="gender" value="female" id="female" />
                     <label for="female">Female</label>
                 </div>
-
+                <div>
+                    <label for="access">access</label>
+                    <select name="access" id="access">
+                        <option value=""></option>
+                        <option value="admin">Admin</option>
+                        <option value="user">Users</option>
+                    </select>
+                </div>    
                 <div>
                     <label for="country">Country</label>
                     <select name="country" id="country">

@@ -108,32 +108,4 @@
 
 <?php 
 
-
-   
-//     $data = file_get_contents('data.json');
-//     $data = json_decode($data, true);
-//     $userid = $_GET['userid'];
-//     foreach($data as $row){
-//     if ($row['id'] == $userid){
-//         unset($data[$userid]);
-//     }
-// }
-//              $data = json_encode($data, JSON_PRETTY_PRINT);
-//              file_put_contents('data.json', $data);
-            
-
-//  if(isset($_GET['action']) && $_GET['action'] == 'delete'){
-//     $data = file_get_contents('data.json');
-//     $data = json_decode($data, true);
-//     $userid = $_GET['userid'];
-
-//    foreach($data as $row){
-//         if ($row['id'] == $userid){
-//             unset($data[$userid]);
-//     }
-// }
-//     $data = json_encode($data, JSON_PRETTY_PRINT);
-//     file_put_contents('data.json', $data);
-//    header('location:admin.php');
-//    exit();}
 ?> 

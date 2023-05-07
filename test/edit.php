@@ -6,7 +6,7 @@
 <?php
   $data = file_get_contents('data.json');
   $data = json_decode($data,true);
-      $index = $_GET['index'];
+     $index = $_GET['index'];
 
       if(isset($_POST['save'])){
       
@@ -15,7 +15,6 @@
                 $gender = $row['gender'];
                 $places = $row['places'];
             }
-            // $row=$data[$index];
                 $input = [
                     'access' => $_POST['access'],
                     'id' => $_POST['id'],
@@ -27,7 +26,7 @@
                     'password' => $password,
                     'gender' => $gender,
                     'country' => $_POST['country'],
-                    'places' => $places               
+                    'places' => $places             
                 ];
                 $data[$index] = $input;
                 $data = json_encode($data , JSON_PRETTY_PRINT);
