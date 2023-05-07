@@ -102,7 +102,7 @@ header .logo img{
 }
 
 table tr th{
-    /* background-color:black; */
+    background-color:black;
     color: white;
     padding: 0px 23px 7px 0px;
     text-align: left;
