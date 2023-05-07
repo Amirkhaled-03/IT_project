@@ -20,6 +20,10 @@ w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
     
 }
 
+ul{
+    list-style: none;
+    
+}
 
 html{
     scroll-behavior: smooth;     /*3shan lma agi a3mil scroll el donia tb2a basyta mttkhtefsh */
@@ -28,6 +32,7 @@ html{
 
 body{  
     font-family: 'Cairo', sans-serif;   /*font size that used in site*/
+    background-color: #f0f0f0;
     
 }
 
@@ -79,9 +84,39 @@ body{
 
 /* ==================================================================================================================================================================== */
 
-header .logo img{
-    height: 120px;
+header{
+    position: relative;
 }
+header .logo img{
+    height: 75px;
+}
+
+header .links{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+.links ul{
+    display: flex;
+}
+
+.links ul li {
+    padding: 4px 10px;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    margin: 2px;
+    background: black;
+    color: white;
+
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .info{
     /* width: 500px; */
@@ -89,13 +124,36 @@ header .logo img{
     overflow-x: auto;
 }
 
-/* tzher fel mobile */
-@media (min-width:767px) {
+
+.access_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+@media (max-width:767px) {
+    .access_info{
+        position: fixed;
+    }
+
+    table{
+        margin: 75px 0 0 0;
+    }
     
 }
 
+.access_info .all{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px 12px;
+    width: 93px;
+
+    text-align: center;
+    font-weight: 700;
+}
+
 .info table{
-    margin: 20px auto;
+    /* margin: 20px auto; */
     padding: 10px;
     border-spacing: 0;
     width: 100%;
@@ -106,7 +164,12 @@ table tr th{
     color: white;
     padding: 0px 23px 7px 0px;
     text-align: left;
+
 }
+
+/* .a{
+    width: 0;
+} */
 
 table tr td{
     padding: 3px 35px 3px 0px;
@@ -123,4 +186,17 @@ table tr:nth-child(even){
 
 table tr:nth-child(odd){
     background-color:white
+}
+
+.add{
+    /* border: 5px solid; */
+    border-radius: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    width: 86px;
+    text-align: center;
+    background: black;
+    color: white;
+    display: block;
+
 }
