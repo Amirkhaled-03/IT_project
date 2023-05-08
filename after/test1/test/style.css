@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.error {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EgyEye Registration</title>
+    </head>
+
+    <body>
+        <div>
+
+            <h2>Register</h2>
+
+            <form action="register.php" method="post">
+
+                <div>
+                    <label for="username">Username</label>
+                    <span><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" name="username" placeholder="Enter your name" id="username" required />
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <span><ion-icon name="mail-outline"></ion-icon></span>
+                    <?php
+                        if(isset($emailExist)) echo "<p>this email is already exist.</p>";
+                    ?>
+                    <input type="email" name="email" placeholder="Enter your email" id="email" title="For example: Google@gmail.com" required />
+                </div>
+
+                <div>
+                    <label for="password">Password</label>
+                    <span><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" name="password" placeholder="Enter your password" id="password" min="8" pattern="^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$&*])[A-Za-z0-9!@#$&*]{8,}$" title="Must be alphanumeric, First letter of the password should be capital, Password must contain a special character (@, $, !, &, etc), Password length must be greater than 8 characters, Should not be empty" required />
+                </div>
+
+                <div>
+                    <label for="confirm_password">Confirm Password</label>
+                    <span><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" min="8" required /><!-- oninput="check(this)"-->
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <span><ion-icon name="call-outline"></ion-icon></span>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]+" title="Enter only digits" />
+                </div>
+
+                <div>
+                    <label>Gender</label><br/>
+                    <input type="radio" name="gender" value="male" id="male" />
+                    <label for="male">Male</label><br>
+                    <input type="radio" name="gender" value="female" id="female" />
+                    <label for="female">Female</label>
+                </div>
+
+                <div>
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value=""></option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="England">England</option>
+                        <option value="France">France</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Palestine">Palestine</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sueden">Sueden</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Uk">Uk</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="places[]">visited Places</label><br>
+                    <input type="checkbox" name="places[]" value="Ain Sokhna" id="1" />
+                    <label for="1">Ain Sokhna</label><br/>
+                    <input type="checkbox" name="places[]" value="Alexandria" id="2" />
+                    <label for="2">Alexandria</label><br/>
+                    <input type="checkbox" name="places[]" value="Aswan" id="3" />
+                    <label for="3">Aswan</label><br/>
+                    <input type="checkbox" name="places[]" value="Cairo" id="4" />
+                    <label for="4">Cairo</label><br/>
+                    <input type="checkbox" name="places[]" value="Dahab" id="5" />
+                    <label for="5">Dahab</label><br/>
+                    <input type="checkbox" name="places[]" value="Hurghada" id="6" />
+                    <label for="6">Hurghada</label><br/>
+                    <input type="checkbox" name="places[]" value="Luxor" id="7" />
+                    <label for="7">Luxor</label><br/>
+                    <input type="checkbox" name="places[]" value="North Coast" id="8" />
+                    <label for="8">North Coast</label><br/>
+                    <input type="checkbox" name="places[]" value="Sharm El Sheikh" id="9" />
+                    <label for="9">Sharm El Sheikh</label><br/>
+                    <input type="checkbox" name="places[]" value="Siwa Oasis" id="10" />
+                    <label for="10">Siwa Oasis</label>
+                </div>
+
+                    <input type="submit" name="register" value="Register" /><br/>
+                    <a href="login.html">sign in</a>
+            </form>
+        </div>
+            <!-- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            <script language='javascript' type='text/javascript'>
+		        function check(input) {
+			        if (input.value != document.getElementsByName('password')[0].value) {
+				        input.setCustomValidity('Passwords do not match.');
+			        } else {
+				        input.setCustomValidity('');
+			        }
+		        }
+	        </script> -->
+    </body>
+</html>
+"<script>alert('First name must be filled out');</script>
