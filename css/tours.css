@@ -1,0 +1,350 @@
+/*start global rules */
+
+/*
+bos sizing el fel asan byb2a content bos w dah ma3nah en khod el widrh bta3 el element w zawid 3leh padding w margin wkeda
+border bos ma3nah width w heigth bta3 el element h inculde el width bta3 ay haga ana ha3milha border maslan
+w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
+  
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+
+    
+}
+
+
+html{
+    scroll-behavior: smooth;     /*3shan lma agi a3mil scroll el donia tb2a basyta mttkhtefsh */
+
+}
+
+body{  
+    font-family: 'Cairo', sans-serif;   /*font size that used in site*/
+    
+}
+
+
+/*
+  eshan el hagat kolha tegi ba3d width mo3in matlz2sh kolha awil al safha  w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa
+*/
+.container {               /*eshan el haga tege fe nos el safha w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa*/
+    /* width: 600px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;    /*kol dah3ashan el noskha bta3et el phone matb2ash el kalam awil el page*/
+    margin-right: auto;  
+}
+
+/* Small */
+@media (min-width: 768px) {
+    /* .container {
+      width: 750px;
+    } */
+
+ 
+    
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+ }
+/* Large */
+@media (min-width: 1200px) {
+    /* .container {
+      width: 1170px;
+    } */
+
+    .con{
+        margin: 0 0 0 0;
+    }
+}
+/*end global rules */
+
+/* tkhtefi fel mobile action yhsal fel mobile*/
+@media (max-width:767px) {
+    
+}
+
+/* tzher fel mobile */
+@media (min-width:767px) {
+    
+}
+
+
+/* ======================================================= */
+
+header{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 35px;
+    background-color: #ebeced;
+}
+header .container{
+    position: relative; /*3shan el icon*/
+}
+
+header img{
+    width: 72px;
+}
+
+header .container i{
+    position: absolute;   /*bel nesba l el container*/
+    right: 5px;
+    top: 30%;
+    font-size: 20px;
+
+}
+
+header .container ul{
+    /* display: none; */
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    background-color: azure;
+    
+}
+
+header .container .links:hover ul{
+    display: block;
+}
+
+
+
+
+header .links ul{
+    list-style-type: none;
+    margin: 0px;
+    min-width: 155px;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    display: none;
+   transition: 0.3s;
+
+}
+
+
+header .links ul li a{
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+header .links ul li:hover{
+    padding-left: 10px;
+}
+
+header .links ul li:not(:last-child){
+    border-bottom: 1px solid #00008b;
+    
+}
+
+/* start tour */
+
+.content{
+    display: flex;
+
+}
+
+.kol_haga_gowa_hena{
+    display: flex;
+}
+
+
+.aside{
+    width: 219px;
+    padding: 10px;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.search input{
+    padding-left: 6px;
+    border-radius: 5px;
+}
+
+
+.aside .info .date{
+    padding: 4px 0 0 0 ;
+}
+
+.tours{
+    border: 1px solid  #dddddd;
+    border-radius: 5px;
+    margin: 0px 0 14px 5px;
+}
+.tours .inf {
+    display: flex;
+
+}
+
+.tours img{
+    width: 175px;
+    height: 186px;
+    margin: 3px;
+}
+
+.details{
+    padding-left: 12px;
+}
+
+
+
+/* tkhtefi fel mobile action yhsal fel mobile*/
+@media (max-width:767px) {
+    .aside{
+        display: none;
+    }
+
+    .tours .inf {
+        display: block;
+    
+    }
+
+    .tours img{
+        width: 170px;
+        height: 131px;
+       
+    }
+    
+}
+
+.srv{
+    display: flex;
+
+}
+
+.srv div{
+    flex-grow: 1;
+
+}
+
+.srv div i,
+.details i{
+    color: blue;
+
+}
+
+.sub{
+    margin: 10px 0 7px 0;
+}
+
+.submit{
+    font-size: 18px;
+    padding: 2px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+ /*.tour{
+    padding: 4px;
+    background-color: #ebeced;
+    margin: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+
+
+} */
+
+ /*.tour .info div{
+    margin-left: 10px;
+}
+
+.tour .info div p{
+    font-size: 16px;
+    margin-bottom: 4px;
+
+}
+
+.tour .info div p i{
+    color: blue;
+} 
+
+ .tour .info div .date{
+    font-size: 15px;
+}
+
+.tour .info{
+    display: flex;
+}
+
+.tour img{
+    width: 217px;
+}
+
+.tour .hotel{
+    margin:0 4px 0 4px ;
+
+} 
+
+ .tour .hotel p{
+    margin: 5px 0 5px 0;
+    
+}
+
+.tour .hotel i{
+    color: blue;
+
+}
+
+.tour .hotel .srv{
+    display: flex;
+
+}
+
+.tour .hotel .srv div{
+    margin-left: 15px;
+
+}
+
+.diving{
+    margin-top: 10px;
+}
+
+.diving div{
+    margin-left: 15px;
+}
+
+.submit{
+    margin-left: 50%;
+    
+    font-size: 32px;
+}
+
+.book{
+    padding: 2px 9px 2px 9px;
+    color: white;
+    background-color: black;
+    
+}
+
+.book:hover{
+    color: black;
+    background-color: white;
+} */
+
+
+
+
+
+
+
+
+/* tkhtefi fel mobile action yhsal fel mobile*/
+/* @media (max-width:767px) {
+  
+    .tour .info img{
+        width: 160px;
+        height: 160px;
+    }

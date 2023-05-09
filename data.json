@@ -1,0 +1,34 @@
+{
+    "0": {
+        "access": "admin",
+        "id": 1,
+        "username": "Egy_Eye#1",
+        "first_name": "Egy",
+        "last_name": "Eye",
+        "email": "EgyEye@gmail.com",
+        "password": "$2y$10$BZfv2U4HqkkcbRqJehZmXumurpY6WQqX420uFuZL4msx68PD0GnCW",
+        "phone": "01143195741",
+        "gender": "male",
+        "country": "Egypt",
+        "places": [
+            "Cairo"
+        ]
+    },
+    "1": {
+        "access": "user",
+        "id": 2,
+        "username": "User_10#3",
+        "first_name": "User",
+        "last_name": "10",
+        "email": "User10@gmail.com",
+        "password": "$2y$10$SVj9mTlfmcJFkrXfkfUahuGmLO\/SsNtTKyP.yq9xGLm.eHoKQqAbS",
+        "phone": "01099803449",
+        "gender": "male",
+        "country": "Egypt",
+        "places": [
+            "Cairo",
+            "Dahab",
+            "Hurghada"
+        ]
+    }
+}

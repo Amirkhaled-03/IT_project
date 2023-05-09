@@ -1,0 +1,77 @@
+/*OOOOOOOLLLLLLLLLLLLLLLLLLLLLLLDDDDDDDDDDDDDDDDDDDDDDDDDDDDD OONNNNNNNNNNEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color:#242d34;
+
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.box{
+    background-color:black;
+    width: 443px;
+    padding: 50px;
+    color:white;
+}
+
+h1{
+    color: white;
+}
+
+.reset{
+    border: none;
+    outline: none;
+    background-color: white;  
+}
+
+.layout{
+    border-bottom: 1px solid red;
+    width: 49%;
+    background-color: black;
+}
+
+.gender{
+    display: flex;
+}
+
+.gender label{
+    padding-right: 15px;
+}
+
+
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+
+    
+}
+
+.submit input{
+    padding: 4px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
