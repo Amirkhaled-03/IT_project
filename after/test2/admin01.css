@@ -1,0 +1,231 @@
+
+/*start global rules */
+
+/*
+bos sizing el fel asan byb2a content bos w dah ma3nah en khod el widrh bta3 el element w zawid 3leh padding w margin wkeda
+border bos ma3nah width w heigth bta3 el element h inculde el width bta3 ay haga ana ha3milha border maslan
+w 3amalt reset ll padding w el margin aly fel page 3shan ashta8al brahti w keda
+  
+*/
+
+:root{
+    --h2_section_color:#800000;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+ul{
+    list-style: none;
+    
+}
+
+html{
+    scroll-behavior: smooth;     /*3shan lma agi a3mil scroll el donia tb2a basyta mttkhtefsh */
+
+}
+
+body{  
+    font-family: 'Cairo', sans-serif;   /*font size that used in site*/
+    background-color: #f0f0f0;
+    
+}
+
+
+/*
+  eshan el hagat kolha tegi ba3d width mo3in matlz2sh kolha awil al safha  w bardo el hagat fe back ground matt2sarsh w temla el shasha kolha | kol el site 3la nafs el mostwa
+*/
+.container {             
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;    /*kol dah3ashan el noskha bta3et el phone matb2ash el kalam awil el page*/
+    margin-right: auto;  
+}
+
+/* responsive w keda  */
+
+/* mobile from zero to 768 */
+@media(min-width: 768px) {
+  .container{
+    width: 744px;
+    /* width: 800px; */
+  }
+}
+
+/* medium screen */
+@media(min-width: 992px){
+    .container{
+        width: 912px;
+    }
+}
+
+/* large screens */
+@media(min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/*end global rules */
+
+/* tkhtefi fel mobile action yhsal fel mobile*/
+@media (max-width:767px) {
+    
+}
+
+/* tzher fel mobile */
+@media (min-width:767px) {
+    
+}
+
+/* ==================================================================================================================================================================== */
+
+header{
+    position: relative;
+}
+header .logo img{
+    height: 75px;
+}
+
+header .links{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+}
+
+.links ul{
+    display: flex;
+}
+
+.links ul li {
+    padding: 4px 10px;
+    /* border: 1px solid; */
+    border-radius: 8px;
+    margin: 2px;
+    background: black;
+    color: white;
+
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.info{
+    /* width: 500px; */
+    /* background-color: red; */
+    overflow-x: auto;
+}
+
+
+.access_info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+@media (max-width:767px) {
+    .access_info{
+        position: fixed;
+    }
+
+    table{
+        margin: 75px 0 0 0;
+    }
+    
+}
+
+.access_info .all{
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px 12px;
+    width: 93px;
+
+    text-align: center;
+    font-weight: 700;
+}
+
+.info table{
+    /* margin: 20px auto; */
+    padding: 10px;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table tr th{
+    background-color:black;
+    color: white;
+    padding: 0px 23px 7px 0px;
+    text-align: left;
+
+}
+
+/* .a{
+    width: 0;
+} */
+
+table tr td{
+    padding: 3px 35px 3px 0px;
+    color: gray;
+}
+
+table tr  th,table tr td{
+    padding: 10px;
+}
+
+table tr:nth-child(even){
+    background-color:#f8f8f8;
+}
+
+table tr:nth-child(odd){
+    background-color:white
+}
+
+.amanshof{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 5px 14px;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 66px;
+    margin-bottom: 5px;
+}
+.add{
+    /* border: 5px solid; */
+    border-radius: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    width: 86px;
+    text-align: center;
+    background: black;
+    color: white;
+    display: block;
+
+}
+
+/* start footer */
+.footer{
+    background-color: #2c4755;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 16px 3px 10px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+
+
+}
+.footer span{
+    color:#f9b940;
+}
+
+/* end footer */
