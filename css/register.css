@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;         /*3shan lma agi a3mil scroll el donia tb2a basyta mttkhtefsh */
+}
+
+:root{
+    --color:#ba0ac9 ;
+}
+
+body{
+    font-family: 'Cairo', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5% auto 20%;
+}
+
+.box {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:black;
+    border-radius: 10px;
+    padding: 45px;
+    width: 560px;
+}
+
+h2 {
+    text-align: center;
+    color:white;
+    font-size: 34px;
+    margin-bottom: 45px;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+
+form div {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #b0b0b0;
+    margin-bottom: 15px;
+}
+
+form input {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 7px;
+    margin-bottom: 14px;
+    width: 100%;
+    letter-spacing: 1.3px;
+}
+
+input:focus{
+    font-size: 17px;
+}
+
+.box form input::placeholder {
+    color:white;
+    opacity: 0.5;
+    font-size: 15px;
+    padding: 15px;
+}
+
+form div:not(.agree):hover  {
+    border-bottom-color:var(--color);
+}
+
+form div span {
+    color: white;
+    font-size: 15px;
+    padding: 0 6px 6px 0;
+}
+
+form div:hover span {
+    color:var(--color);
+}
+
+form div i {
+    color: white;
+    font-size: 15px;
+    padding: 0 6px 6px 0;
+}
+
+form div:hover i {
+    color:var(--color);
+}
+
+.register {
+    border-radius: 25px;
+    color: white;
+    background-color: #242d34;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.register:hover{
+    background-color:var(--color);
+    padding-left: 15px;
+    
+}
+
+/*Radio Buttons*/
+.radio {
+    font-weight: 500;
+    color: white;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.radio input[type="radio"]{
+    display: none;
+}
+
+.radio span {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #ba0ac9;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+
+.radio span:after {
+    content: "";
+    height: 13px;
+    width: 13px;
+    background: #ba0ac9;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%) scale(0); /*copy it in checked */
+    border-radius: 50%; 
+    transition: 300ms ease-in 0s;
+}
+
+.radio input[type="radio"]:checked ~ span:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+/*end of radio buttons*/
+
+/*select list*/
+
+select {
+    padding: 1px 1px;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 70%;
+    font-size: small;
+    margin-left: 120px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+select:focus,
+select:hover {
+    outline: none;
+    border: 1px solid #ba0ac9;
+
+}
+
+select option {
+    background: white;
+}
+
+
+/*check boxes*/
+
+.places {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+}
+
+
+input[type="checkbox"] {
+    height: 12px;
+    width: 12px;
+    background-color: #e2d9e4;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.places label {
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+.places label:hover {
+    color:var(--color);
+}
+/*====================*/
+.agree label:hover {
+    color:var(--color);
+}
+/*==========================*/
+.signin {
+    display: block;
+}
+p {
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.login {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #b0b0b0;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.login:hover{
+    color: var(--color);
+}
+
+
+/* action yhsal fel mobile */
+@media (max-width: 540px)
+{
+    .container{
+        top:50px ;
+    }
+
+    body{
+        background-color: black;
+    }
+}

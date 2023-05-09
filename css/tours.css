@@ -186,8 +186,8 @@ header .links ul li:not(:last-child){
 }
 
 .tours img{
-    width: 130px;
-    height: 122px;
+    width: 175px;
+    height: 186px;
     margin: 3px;
 }
 
@@ -210,7 +210,7 @@ header .links ul li:not(:last-child){
 
     .tours img{
         width: 170px;
-        height: 81px;
+        height: 131px;
        
     }
     

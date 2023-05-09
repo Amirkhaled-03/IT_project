@@ -1,0 +1,72 @@
+{
+    "1": {
+        "image": "sewar\/sharm stella 1.1.jpg",
+        "id": 1,
+        "destination": "Sharm El Sheikh: Stella Di Mare Hotel",
+        "hotel": "Sharm elsheikh,Naama Bay",
+        "from_date": "13\/5\/23",
+        "to_date": "17\/5\/23",
+        "excursions": "4 days, 3 nights including snorkeling and scuba diving",
+        "price": "10000"
+    },
+    "2": {
+        "image": "sewar\/tours\/dahab1.jpg",
+        "id": 2,
+        "destination": "Dahab: Ecotel Dahab Bay View Resort",
+        "hotel": "Dahab, South Sinai",
+        "from_date": "20\/8\/23",
+        "to_date": "24\/8\/23",
+        "excursions": "5 days in this luxurious, 4-star hotel that offers stunning views of the Red Sea and the Sinai Mountains.",
+        "price": "12000"
+    },
+    "3": {
+        "image": "sewar\/tours\/Hurghada5.jpg",
+        "id": 3,
+        "destination": "Hurghada: Arabella Azur Resort",
+        "hotel": "Hurghada, Red Sea Governate",
+        "from_date": "1\/6\/23",
+        "to_date": "3\/5\/23",
+        "excursions": "3 days, 1 night including Semi-Submarine Boat Trip With Snorkelling.",
+        "price": "9000"
+    },
+    "4": {
+        "image": "sewar\/tours\/siwa3.jpg",
+        "id": 4,
+        "destination": "Siwa: Taziry Ecolodge & Sustainable Village",
+        "hotel": "Siwa, Matrouh Governate",
+        "from_date": "23\/5\/23",
+        "to_date": "27\/5\/23",
+        "excursions": "3-star lodge in Siwa with outdoor pool and restaurant.",
+        "price": "12000"
+    },
+    "5": {
+        "image": "sewar\/tours\/luxor4.jpg",
+        "id": 5,
+        "destination": "Luxor : Embrace Hotel",
+        "hotel": "Embrace Hotel,Luxor",
+        "from_date": "20.7.23",
+        "to_date": "1.8.23",
+        "excursions": "Embrace Hotel is situated in luxor just in 1.3 km from the centre.",
+        "price": "18000"
+    },
+    "6": {
+        "image": "sewar\/tours\/aswan4.jpg",
+        "id": 6,
+        "destination": "Aswan : Ben Ben Hotel",
+        "hotel": "Ben Ben eco lodge,Aswan",
+        "from_date": "5.5.23",
+        "to_date": "10.5.23",
+        "excursions": "The hotel is 2 KM away from Philae temple",
+        "price": "4500"
+    },
+    "7": {
+        "image": "sewar\/tours\/ain-sukhna.jpg",
+        "id": 7,
+        "destination": "El Sokhna : Ramada El sokhna Hotel",
+        "hotel": "Hurgada Rd,Ain Sukhna",
+        "from_date": "30.7.23",
+        "to_date": "7.8.23",
+        "excursions": "snorkeling : pick up form the hotel at sunday 12.00pm, price included transfers buses, Lunch and soft drinks, Snorkeling Equipment",
+        "price": "6500"
+    }
+}

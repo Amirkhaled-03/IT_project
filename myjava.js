@@ -30,4 +30,3 @@ function autoSlide(){
     showSlides(slideIndex += 1);
   
 }
-
